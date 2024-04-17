@@ -22,8 +22,8 @@ const CartTableRow = (props: { entry: CartEntry }) => {
             <Image
               src={props.entry.product.imageUrl}
               alt={props.entry.product.name}
-              height={500}
-              width={600}
+              height={45}
+              width={50}
             />
           </Col>
           <Col xs={8} md={10} lg={11}>
