@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Header from "@/components/Header";
+import { Button, Container } from "reactstrap";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
@@ -14,14 +16,18 @@ const Home: NextPage = () => {
       <Header />
 
       <main>
-        <h1>
-          welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
-          corrupti.
-        </p>
+        <Container className="py-5 text-center">
+          <h1>O melhor jeito de ncomprar o que você ama</h1>
+          <p className="my-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+            libero!
+          </p>
+          <Link href="/products">
+            <Button color="dark" className="px-4 pb-2">
+              Conheça nossos produos!
+            </Button>
+          </Link>
+        </Container>
       </main>
     </>
   );
