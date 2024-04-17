@@ -10,7 +10,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const id = context.params?.id;
 
   if (typeof id === "string") {
-    const product = fetchProduct(id);
+    const product = await fetchProduct(id);
 
     return {
       props: {
